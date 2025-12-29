@@ -1,0 +1,2 @@
+logging:
+  out_dir: ./outputs

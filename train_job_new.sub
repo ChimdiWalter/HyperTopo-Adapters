@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH --job-name=training_V100
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=32G
+#SBATCH --time=1-00:00:00
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:V100-PCIE-32GB:2
+#SBATCH --output=output_V100_%j.log
+#SBATCH --error=error_V100_%j.log
+
+# Activate virtual environment
+source /cluster/VAST/kazict-lab/e/lesion_phes/lesenv/bin/activate
+echo "Virtual environment activated."
+
+# Navigate to the correct working directory
+cd /cluster/VAST/kazict-lab/e/lesion_phes/code/dataset_segmentation/Manifold_experiment_2/Manifold_experiments/hypertopo_adapters_repo_full || { echo "Directory not found"; exit 1; }
+
+# Run training script
+python3.11 -m src.train --config configs/default.yaml
+
+echo "Training job on V100 completed!"

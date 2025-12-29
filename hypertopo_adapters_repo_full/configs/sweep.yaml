@@ -1,0 +1,6 @@
+sweep:
+  seeds: [1337, 2025]
+  topology_weight: [0.0, 0.25]
+  dh: [16, 32]
+  ds: [16, 32]
+  temperature: [0.07, 0.1, 0.2]

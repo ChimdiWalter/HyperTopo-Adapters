@@ -1,0 +1,17 @@
+Virtual environment activated.
+Epoch 1/30 | VAL Dice=0.239 IoU=0.145 BF1=0.054 Δβ0=10.25 Δβ1=4.66 PD=0.417 | geom=H⊕E⊕S topo_w=0.25
+Epoch 2/30 | VAL Dice=0.263 IoU=0.161 BF1=0.086 Δβ0=10.71 Δβ1=5.62 PD=0.434 | geom=H⊕E⊕S topo_w=0.25
+Epoch 3/30 | VAL Dice=0.278 IoU=0.173 BF1=0.126 Δβ0=9.77 Δβ1=2.92 PD=0.436 | geom=H⊕E⊕S topo_w=0.25
+Epoch 4/30 | VAL Dice=0.287 IoU=0.179 BF1=0.179 Δβ0=10.26 Δβ1=2.05 PD=0.422 | geom=H⊕E⊕S topo_w=0.25
+Epoch 5/30 | VAL Dice=0.291 IoU=0.183 BF1=0.173 Δβ0=10.19 Δβ1=2.42 PD=0.412 | geom=H⊕E⊕S topo_w=0.25
+Epoch 6/30 | VAL Dice=0.290 IoU=0.182 BF1=0.184 Δβ0=10.90 Δβ1=1.28 PD=0.398 | geom=H⊕E⊕S topo_w=0.25
+Epoch 7/30 | VAL Dice=0.307 IoU=0.196 BF1=0.160 Δβ0=9.23 Δβ1=1.29 PD=0.348 | geom=H⊕E⊕S topo_w=0.25
+Epoch 8/30 | VAL Dice=0.294 IoU=0.185 BF1=0.167 Δβ0=10.08 Δβ1=7.78 PD=0.344 | geom=H⊕E⊕S topo_w=0.25
+Epoch 9/30 | VAL Dice=0.305 IoU=0.194 BF1=0.158 Δβ0=9.61 Δβ1=4.30 PD=0.349 | geom=H⊕E⊕S topo_w=0.25
+Epoch 10/30 | VAL Dice=0.309 IoU=0.198 BF1=0.147 Δβ0=9.48 Δβ1=3.74 PD=0.349 | geom=H⊕E⊕S topo_w=0.25
+Epoch 11/30 | VAL Dice=0.294 IoU=0.185 BF1=0.157 Δβ0=10.25 Δβ1=2.04 PD=0.379 | geom=H⊕E⊕S topo_w=0.25
+Epoch 12/30 | VAL Dice=0.308 IoU=0.197 BF1=0.158 Δβ0=9.52 Δβ1=3.12 PD=0.343 | geom=H⊕E⊕S topo_w=0.25
+Epoch 13/30 | VAL Dice=0.307 IoU=0.196 BF1=0.153 Δβ0=9.47 Δβ1=2.07 PD=0.382 | geom=H⊕E⊕S topo_w=0.25
+Epoch 14/30 | VAL Dice=0.297 IoU=0.188 BF1=0.184 Δβ0=9.41 Δβ1=2.04 PD=0.379 | geom=H⊕E⊕S topo_w=0.25
+Epoch 15/30 | VAL Dice=0.313 IoU=0.201 BF1=0.154 Δβ0=11.35 Δβ1=2.09 PD=0.377 | geom=H⊕E⊕S topo_w=0.25
+Epoch 16/30 | VAL Dice=0.312 IoU=0.200 BF1=0.158 Δβ0=9.63 Δβ1=2.85 PD=0.378 | geom=H⊕E⊕S topo_w=0.25

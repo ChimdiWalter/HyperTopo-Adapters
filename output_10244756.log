@@ -1,0 +1,34 @@
+Virtual environment activated.
+Epoch 1/30 | VAL Dice=0.306 IoU=0.195 BF1=0.139 Δβ0=9.87 Δβ1=0.76 PD=0.284 | geom=H⊕E⊕S topo_w=0.05
+Epoch 2/30 | VAL Dice=0.315 IoU=0.203 BF1=0.160 Δβ0=9.75 Δβ1=1.25 PD=0.280 | geom=H⊕E⊕S topo_w=0.05
+Epoch 3/30 | VAL Dice=0.315 IoU=0.203 BF1=0.158 Δβ0=9.80 Δβ1=0.73 PD=0.285 | geom=H⊕E⊕S topo_w=0.05
+Epoch 4/30 | VAL Dice=0.320 IoU=0.207 BF1=0.157 Δβ0=10.15 Δβ1=0.73 PD=0.281 | geom=H⊕E⊕S topo_w=0.05
+Epoch 5/30 | VAL Dice=0.322 IoU=0.209 BF1=0.153 Δβ0=10.11 Δβ1=0.73 PD=0.278 | geom=H⊕E⊕S topo_w=0.05
+Epoch 6/30 | VAL Dice=0.326 IoU=0.211 BF1=0.160 Δβ0=9.88 Δβ1=0.73 PD=0.275 | geom=H⊕E⊕S topo_w=0.05
+Epoch 7/30 | VAL Dice=0.327 IoU=0.212 BF1=0.157 Δβ0=9.81 Δβ1=0.76 PD=0.284 | geom=H⊕E⊕S topo_w=0.05
+Epoch 8/30 | VAL Dice=0.326 IoU=0.211 BF1=0.163 Δβ0=10.48 Δβ1=1.19 PD=0.282 | geom=H⊕E⊕S topo_w=0.05
+Epoch 9/30 | VAL Dice=0.324 IoU=0.210 BF1=0.155 Δβ0=9.32 Δβ1=2.90 PD=0.281 | geom=H⊕E⊕S topo_w=0.05
+Epoch 10/30 | VAL Dice=0.327 IoU=0.211 BF1=0.164 Δβ0=9.92 Δβ1=1.37 PD=0.283 | geom=H⊕E⊕S topo_w=0.05
+Epoch 11/30 | VAL Dice=0.329 IoU=0.214 BF1=0.151 Δβ0=10.09 Δβ1=1.74 PD=0.282 | geom=H⊕E⊕S topo_w=0.05
+Epoch 12/30 | VAL Dice=0.330 IoU=0.214 BF1=0.155 Δβ0=9.74 Δβ1=2.61 PD=0.283 | geom=H⊕E⊕S topo_w=0.05
+Epoch 13/30 | VAL Dice=0.296 IoU=0.186 BF1=0.124 Δβ0=27.84 Δβ1=1.97 PD=0.360 | geom=H⊕E⊕S topo_w=0.05
+Epoch 14/30 | VAL Dice=0.312 IoU=0.201 BF1=0.152 Δβ0=33.84 Δβ1=3.76 PD=0.355 | geom=H⊕E⊕S topo_w=0.05
+Epoch 15/30 | VAL Dice=0.316 IoU=0.204 BF1=0.158 Δβ0=31.25 Δβ1=3.72 PD=0.345 | geom=H⊕E⊕S topo_w=0.05
+Epoch 16/30 | VAL Dice=0.319 IoU=0.206 BF1=0.162 Δβ0=32.06 Δβ1=3.15 PD=0.352 | geom=H⊕E⊕S topo_w=0.05
+Epoch 17/30 | VAL Dice=0.318 IoU=0.205 BF1=0.151 Δβ0=42.65 Δβ1=3.66 PD=0.360 | geom=H⊕E⊕S topo_w=0.05
+Epoch 18/30 | VAL Dice=0.319 IoU=0.206 BF1=0.148 Δβ0=40.99 Δβ1=2.61 PD=0.361 | geom=H⊕E⊕S topo_w=0.05
+Epoch 19/30 | VAL Dice=0.320 IoU=0.207 BF1=0.148 Δβ0=43.38 Δβ1=2.08 PD=0.361 | geom=H⊕E⊕S topo_w=0.05
+Epoch 20/30 | VAL Dice=0.322 IoU=0.208 BF1=0.146 Δβ0=43.49 Δβ1=1.37 PD=0.356 | geom=H⊕E⊕S topo_w=0.05
+Epoch 21/30 | VAL Dice=0.325 IoU=0.210 BF1=0.149 Δβ0=31.41 Δβ1=0.84 PD=0.361 | geom=H⊕E⊕S topo_w=0.05
+Epoch 22/30 | VAL Dice=0.326 IoU=0.211 BF1=0.148 Δβ0=30.12 Δβ1=1.09 PD=0.364 | geom=H⊕E⊕S topo_w=0.05
+Epoch 23/30 | VAL Dice=0.328 IoU=0.213 BF1=0.145 Δβ0=23.61 Δβ1=0.99 PD=0.368 | geom=H⊕E⊕S topo_w=0.05
+Epoch 24/30 | VAL Dice=0.324 IoU=0.210 BF1=0.149 Δβ0=16.48 Δβ1=1.11 PD=0.368 | geom=H⊕E⊕S topo_w=0.05
+Epoch 25/30 | VAL Dice=0.331 IoU=0.215 BF1=0.149 Δβ0=27.25 Δβ1=0.77 PD=0.362 | geom=H⊕E⊕S topo_w=0.05
+Epoch 26/30 | VAL Dice=0.326 IoU=0.211 BF1=0.147 Δβ0=21.87 Δβ1=0.75 PD=0.363 | geom=H⊕E⊕S topo_w=0.05
+Epoch 27/30 | VAL Dice=0.333 IoU=0.217 BF1=0.143 Δβ0=19.19 Δβ1=1.14 PD=0.367 | geom=H⊕E⊕S topo_w=0.05
+Epoch 28/30 | VAL Dice=0.325 IoU=0.210 BF1=0.145 Δβ0=14.19 Δβ1=0.90 PD=0.306 | geom=H⊕E⊕S topo_w=0.05
+Epoch 29/30 | VAL Dice=0.329 IoU=0.214 BF1=0.153 Δβ0=18.05 Δβ1=0.74 PD=0.295 | geom=H⊕E⊕S topo_w=0.05
+Epoch 30/30 | VAL Dice=0.332 IoU=0.215 BF1=0.147 Δβ0=17.94 Δβ1=0.87 PD=0.298 | geom=H⊕E⊕S topo_w=0.05
+[SELECT] min-PD in top-5: epoch=12 Dice=0.3295 PD=0.2826
+Training complete. Best-by-Dice (reference): {'dice': 0.33343832087409386, 'iou': 0.21674668903017905, 'boundary_f1': 0.14314548926310497, 'betti0_err': 19.193693693693692, 'betti1_err': 1.135135135135135, 'pd_dist': 0.3666301866335255}
+Training job completed!

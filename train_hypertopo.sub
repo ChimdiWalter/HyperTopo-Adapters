@@ -1,0 +1,47 @@
+#!/bin/bash
+#SBATCH --job-name=training_job
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=32G
+#SBATCH --time=1-00:00:00
+#SBATCH --partition=gpu
+#SBATCH --gres=gpu:A100:2
+#SBATCH --output=output_%j.log
+#SBATCH --error=error_%j.log
+
+
+
+
+# Activate virtual environment
+source /cluster/VAST/kazict-lab/e/lesion_phes/lesenv/bin/activate
+echo "Virtual environment activated."
+
+# Navigate to the correct working directory
+cd /cluster/VAST/kazict-lab/e/lesion_phes/code/dataset_segmentation/Manifold_experiment_2/Manifold_experiments/hypertopo_adapters_repo_full || { echo "Directory not found"; exit 1; }
+
+
+python3.11 -m src.train --config configs/default.yaml
+#python3.11 scripts/run_sweep.py
+#python3.11 scripts/collate_results.py --root outputs/sweeps \
+#  --out_csv outputs/sweeps/summary.csv \
+#  --latex   outputs/sweeps/table.tex
+
+
+
+# Run training script
+#echo "[INFO] Dry run..."
+#python3.11 -m src.eval --config configs/default.yaml 
+
+
+echo "Training job completed!"
+
+#echo "[INFO] Dry run..."
+#srun -u "$PY" -m src.train --config configs/default.yaml --dry_run
+
+#echo "[INFO] Training..."
+#srun -u "$PY" -m src.train --config configs/default.yaml
+
+#echo "[INFO] Evaluating..."
+#srun -u "$PY" -m src.eval  --config configs/default.yaml
+
+#echo "[INFO] Done."

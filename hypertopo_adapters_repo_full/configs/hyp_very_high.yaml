@@ -1,0 +1,39 @@
+# Product manifold H⊕E⊕S
+experiment:
+  name: hes_product
+  seed: 1337
+  precision: bf16
+
+data:
+  root: /deltos/e/lesion_phes/code/python/pipieline/Manifold_experiment_2/Manifold_experiments/data_root
+  train_csv: ./splits/train.csv
+  val_csv:   ./splits/val.csv
+  test_csv:  ./splits/test.csv
+  image_key: image_path
+  mask_key:  mask_path
+  patch_size: [512, 512]
+  num_workers: 1
+
+model:
+  backbone: vit_dinov2_s14
+  token_dim: 256
+  train_tokenizer: partial
+  unfreeze_keys: ["blocks.11","proj_tok","proj"]
+  euclidean_only: false             # <-- key change
+  latent_dims: { dh: 8, de: 32, ds: 8 }
+  curvature: { learn: false, k_h_init: -1.0, k_s_init: 1.0 }
+
+loss:
+  dice_weight: 1.0
+  bce_weight: 0.5
+  hyperbolic_metric_weight: 0.50
+  hyp_warmup_epochs: 5
+  topology_weight: 0.1
+  topo_warmup_epochs: 10
+  topo_surrogate: { thresholds: [0.3,0.5,0.7], sigma: 0.1, alpha: 1.0e-3, beta: 1.0e-3 }
+  contrastive: { temperature: 0.2 }
+
+optimizer: { lr: 1.0e-3, backbone_lr: 1.0e-5, weight_decay: 1.0e-4, epochs: 30, batch_size: 4 }
+
+logging: { out_dir: ./outputs/hes_hyp_very_0p50, save_every: 5, num_vis: 8 }
+

@@ -1,0 +1,112 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chen et~al.(2017)Chen, Papandreou, Schroff, and
+  Adam]{chen2017deeplabv3}
+Liang-Chieh Chen, George Papandreou, Florian Schroff, and Hartwig Adam.
+\newblock Rethinking atrous convolution for semantic image segmentation.
+\newblock \emph{arXiv preprint arXiv:1706.05587}, 2017.
+
+\bibitem[Clough et~al.(2020)Clough, Byrne, Oksuz, Zimmer, Schnabel, and
+  King]{clough2020topological}
+James~R. Clough, Nicholas Byrne, Ilkay Oksuz, Veronika~A. Zimmer, Julia~A.
+  Schnabel, and Andrew~P. King.
+\newblock A topological loss function for deep-learning based image
+  segmentation using persistent homology.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 42\penalty0 (1):\penalty0 1555--1566, 2020.
+
+\bibitem[Dice(1945)]{dice1945}
+Lee~R. Dice.
+\newblock Measures of the amount of ecologic association between species.
+\newblock \emph{Ecology}, 26\penalty0 (3):\penalty0 297--302, 1945.
+
+\bibitem[Edelsbrunner and Harer(2008)]{edelsbrunner2008persistent}
+Herbert Edelsbrunner and John Harer.
+\newblock Persistent homology -- a survey.
+\newblock \emph{Surveys on Discrete and Computational Geometry: Twenty Years
+  Later}, 453:\penalty0 257--282, 2008.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{he2016resnet}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 770--778, 2016.
+
+\bibitem[Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and
+  Chen]{hu2022lora}
+Edward~J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean
+  Wang, Lu~Wang, and Weizhu Chen.
+\newblock {LoRA}: Low-rank adaptation of large language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2022.
+
+\bibitem[Hu et~al.(2019)Hu, Fuxin, Samaras, and Chen]{hu2019topoloss}
+Xiaoling Hu, Li~Fuxin, Dimitris Samaras, and Chao Chen.
+\newblock Topology-preserving deep image segmentation.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~32, pages 7073--7085, 2019.
+
+\bibitem[Jaccard(1912)]{jaccard1912}
+Paul Jaccard.
+\newblock The distribution of the flora in the alpine zone.
+\newblock \emph{New Phytologist}, 11\penalty0 (2):\penalty0 37--50, 1912.
+
+\bibitem[Nickel and Kiela(2017)]{nickel2017poincare}
+Maximilian Nickel and Douwe Kiela.
+\newblock Poincar{'e} embeddings for learning hierarchical representations.
+\newblock In \emph{Advances in Neural Information Processing Systems (NIPS)},
+  volume~30, pages 6338--6347, 2017.
+
+\bibitem[Oord et~al.(2018)Oord, Li, and Vinyals]{oord2018infonce}
+Aaron van~den Oord, Yazhe Li, and Oriol Vinyals.
+\newblock Representation learning with contrastive predictive coding.
+\newblock \emph{arXiv preprint arXiv:1807.03748}, 2018.
+
+\bibitem[Oquab et~al.(2023)Oquab, Darcet, Moutakanni, Vo, Szafraniec, Khalidov,
+  Fernandez, Haziza, Massa, El-Nouby, et~al.]{oquab2023dinov2}
+Maxime Oquab, Timoth{'e}e Darcet, Th{'e}o Moutakanni, Huy~V. Vo, Marc
+  Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa,
+  Alaaeldin El-Nouby, et~al.
+\newblock {DINOv2}: Learning robust visual features without supervision.
+\newblock \emph{arXiv preprint arXiv:2304.07193}, 2023.
+
+\bibitem[Perazzi et~al.(2016)Perazzi, Pont-Tuset, McWilliams, Van~Gool, Gross,
+  and Sorkine-Hornung]{perazzi2016davis}
+Federico Perazzi, Jordi Pont-Tuset, Brian McWilliams, Luc Van~Gool, Markus
+  Gross, and Alexander Sorkine-Hornung.
+\newblock A benchmark dataset and evaluation methodology for video object
+  segmentation.
+\newblock In \emph{Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 724--732, 2016.
+
+\bibitem[Ronneberger et~al.(2015)Ronneberger, Fischer, and
+  Brox]{ronneberger2015unet}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock {U-Net}: Convolutional networks for biomedical image segmentation.
+\newblock In \emph{International Conference on Medical Image Computing and
+  Computer-Assisted Intervention (MICCAI)}, pages 234--241, 2015.
+
+\bibitem[Sim'eoni et~al.(2025)Sim'eoni, Vo, Seitzer, Baldassarre, Oquab, Jose,
+  Khalidov, Szafraniec, Yi, Ramamonjisoa, Massa, Haziza, Wehrstedt, Wang,
+  Darcet, Moutakanni, Sentana, Roberts, Vedaldi, Tolan, Brandt, Couprie,
+  Mairal, J'egou, Labatut, and Bojanowski]{simeoni2025dinov3}
+Oriane Sim'eoni, Huy~V. Vo, Maximilian Seitzer, Federico Baldassarre, Maxime
+  Oquab, Cijo Jose, Vasil Khalidov, Marc Szafraniec, Seungeun Yi, Micha"el
+  Ramamonjisoa, Francisco Massa, Daniel Haziza, Luca Wehrstedt, Jianyuan Wang,
+  Timoth'ee Darcet, Th'eo Moutakanni, Leonel Sentana, Claire Roberts, Andrea
+  Vedaldi, Jamie Tolan, John Brandt, Camille Couprie, Julien Mairal, Herv'e
+  J'egou, Patrick Labatut, and Piotr Bojanowski.
+\newblock {DINOv3}.
+\newblock \emph{arXiv preprint arXiv:2508.10104}, 2025.
+
+\bibitem[{The GUDHI Project}(2015)]{gudhi2015}
+{The GUDHI Project}.
+\newblock \emph{{GUDHI} User and Reference Manual}, 2015.
+\newblock GUDHI Editorial Board.
+
+\end{thebibliography}

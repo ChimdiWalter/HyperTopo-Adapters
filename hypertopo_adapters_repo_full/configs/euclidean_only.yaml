@@ -1,0 +1,25 @@
+# Strict Euclidean baseline: disables hyperbolic & spherical features and losses
+experiment: { name: euclidean_only_baseline, seed: 1337, precision: bf16 }
+data:
+  root: /path/to/lesion_patches
+  train_csv: ./splits/train.csv
+  val_csv:   ./splits/val.csv
+  test_csv:  ./splits/test.csv
+  image_key: image_path
+  mask_key:  mask_path
+  patch_size: [128, 128]
+  num_workers: 4
+model:
+  backbone: tiny_tokenizer
+  train_tokenizer: false
+  euclidean_only: true
+  latent_dims: { dh: 16, de: 32, ds: 16 }   # dh/ds ignored when euclidean_only=true
+  curvature:  { learn: false, k_h_init: -1.0, k_s_init: 1.0 }
+loss:
+  dice_weight: 1.0
+  bce_weight: 0.5
+  hyperbolic_metric_weight: 0.0   # turn off hyperbolic InfoNCE
+  topology_weight: 0.0            # no PH term
+  contrastive: { temperature: 0.1 }
+optimizer: { name: adamw, lr: 1.0e-3, weight_decay: 1.0e-4, epochs: 30, batch_size: 16 }
+logging:   { out_dir: ./outputs_euclidean, save_every: 5, num_vis: 8 }

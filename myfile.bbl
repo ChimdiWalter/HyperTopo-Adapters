@@ -1,0 +1,58 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chen et~al.(2017)Chen, Papandreou, Schroff, and
+  Adam]{chen2017deeplabv3}
+Liang-Chieh Chen, George Papandreou, Florian Schroff, and Hartwig Adam.
+\newblock Rethinking atrous convolution for semantic image segmentation.
+\newblock \emph{arXiv preprint arXiv:1706.05587}, 2017.
+
+\bibitem[Clough et~al.(2020)Clough, Byrne, Oksuz, Zimmer, Schnabel, and
+  King]{clough2020topological}
+James~R. Clough, Nicholas Byrne, Ilkay Oksuz, Veronika~A. Zimmer, Julia~A.
+  Schnabel, and Andrew~P. King.
+\newblock A topological loss function for deep-learning based image
+  segmentation using persistent homology.
+\newblock \emph{IEEE Transactions on Pattern Analysis and Machine
+  Intelligence}, 42\penalty0 (1):\penalty0 1555--1566, 2020.
+
+\bibitem[Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and
+  Chen]{hu2022lora}
+Edward~J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean
+  Wang, Lu~Wang, and Weizhu Chen.
+\newblock {LoRA}: Low-rank adaptation of large language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2022.
+
+\bibitem[Hu et~al.(2019)Hu, Fuxin, Samaras, and Chen]{hu2019topoloss}
+Xiaoling Hu, Li~Fuxin, Dimitris Samaras, and Chao Chen.
+\newblock Topology-preserving deep image segmentation.
+\newblock In \emph{Advances in Neural Information Processing Systems
+  (NeurIPS)}, volume~32, pages 7073--7085, 2019.
+
+\bibitem[Nickel and Kiela(2017)]{nickel2017poincare}
+Maximilian Nickel and Douwe Kiela.
+\newblock Poincar{'e} embeddings for learning hierarchical representations.
+\newblock In \emph{Advances in Neural Information Processing Systems (NIPS)},
+  volume~30, pages 6338--6347, 2017.
+
+\bibitem[Oquab et~al.(2023)Oquab, Darcet, Moutakanni, Vo, Szafraniec, Khalidov,
+  Fernandez, Haziza, Massa, El-Nouby, et~al.]{oquab2023dinov2}
+Maxime Oquab, Timoth{'e}e Darcet, Th{'e}o Moutakanni, Huy~V. Vo, Marc
+  Szafraniec, Vasil Khalidov, Pierre Fernandez, Daniel Haziza, Francisco Massa,
+  Alaaeldin El-Nouby, et~al.
+\newblock {DINOv2}: Learning robust visual features without supervision.
+\newblock \emph{arXiv preprint arXiv:2304.07193}, 2023.
+
+\bibitem[Ronneberger et~al.(2015)Ronneberger, Fischer, and
+  Brox]{ronneberger2015unet}
+Olaf Ronneberger, Philipp Fischer, and Thomas Brox.
+\newblock {U-Net}: Convolutional networks for biomedical image segmentation.
+\newblock In \emph{International Conference on Medical Image Computing and
+  Computer-Assisted Intervention (MICCAI)}, pages 234--241, 2015.
+
+\end{thebibliography}

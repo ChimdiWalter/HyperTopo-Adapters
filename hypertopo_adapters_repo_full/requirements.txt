@@ -1,0 +1,20 @@
+# Core
+torch>=2.2.0
+torchvision>=0.17.0
+numpy>=1.26
+scipy>=1.11
+scikit-image>=0.22.0
+einops>=0.7.0
+tqdm>=4.66.0
+pyyaml>=6.0.1
+pandas>=2.2.0
+
+# Riemannian / Hyperbolic
+
+# Topology
+gudhi>=3.9.0
+ripser>=0.6.5
+
+# Viz & utils
+matplotlib>=3.8.0
+opencv-python>=4.9.0.80

@@ -1,0 +1,35 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{}%
+\contentsline {subsection}{\numberline {1.1}Contributions}{3}{}%
+\contentsline {section}{\numberline {2}Related Work}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Deep Learning in Plant Pathology}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Manifold Learning in Computer Vision}{4}{}%
+\contentsline {subsection}{\numberline {2.3}Topology-Aware Deep Learning}{4}{}%
+\contentsline {section}{\numberline {3}Methodology}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Architecture Pipeline}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Mathematical Formulation of the Manifold Adapter}{4}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Hyperbolic Branch ($\mathbb {B}^8$)}{4}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Euclidean Branch ($\mathbb {R}^{32}$)}{5}{}%
+\contentsline {subsubsection}{\numberline {3.2.3}Spherical Branch ($\mathbb {S}^8$)}{5}{}%
+\contentsline {subsection}{\numberline {3.3}The Hyperbolic Contrastive Loss}{5}{}%
+\contentsline {subsection}{\numberline {3.4}Differentiable Topology Surrogate}{5}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Algorithm Design}{5}{}%
+\contentsline {section}{\numberline {4}Experimental Setup}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Dataset Curation}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Computational Environment}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Hyperparameters}{6}{}%
+\contentsline {section}{\numberline {5}Results}{6}{}%
+\contentsline {subsection}{\numberline {5.1}Quantitative Analysis}{6}{}%
+\contentsline {subsection}{\numberline {5.2}Topological Fidelity Analysis}{6}{}%
+\contentsline {subsection}{\numberline {5.3}Ablation Study}{7}{}%
+\contentsline {subsection}{\numberline {5.4}Qualitative Results}{7}{}%
+\contentsline {section}{\numberline {6}Discussion and Future Work}{8}{}%
+\contentsline {paragraph}{Ongoing and Future Work.}{8}{}%
+\contentsline {section}{\numberline {7}Conclusion}{8}{}%
+\contentsline {section}{\numberline {A}Geometric Foundations}{11}{}%
+\contentsline {subsection}{\numberline {A.1}Riemannian Manifolds in Deep Learning}{11}{}%
+\contentsline {subsection}{\numberline {A.2}The Poincaré Ball Model}{11}{}%
+\contentsline {section}{\numberline {B}Computational Complexity Analysis}{11}{}%
+\contentsline {section}{\numberline {C}Hardware and Environment Specification}{11}{}%
+\contentsline {section}{\numberline {D}Additional Qualitative Analysis}{12}{}%
+\contentsline {subsection}{\numberline {D.1}Success Cases}{12}{}%
+\contentsline {subsection}{\numberline {D.2}Failure Cases}{12}{}%

@@ -1,0 +1,77 @@
+\relax 
+\citation{ronneberger2015unet}
+\citation{chen2017deeplabv3}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\citation{oquab2023dinov2}
+\citation{nickel2017poincare}
+\citation{hu2019topoloss}
+\citation{hu2022lora}
+\citation{hu2019topoloss}
+\citation{clough2020topological}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Deep Learning in Plant Pathology}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Parameter-Efficient Transfer Learning}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Geometric Deep Learning}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Topology-Aware Loss Functions}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Method}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Backbone and Partial Unfreezing}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}The H$\oplus $E$\oplus $S Adapter Head}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}Euclidean Branch ($d_E=32$)}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Hyperbolic Branch ($d_H=8$)}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.3}Spherical Branch ($d_S=8$)}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Decoder}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Loss Functions}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Pixel-wise Segmentation Loss}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Hyperbolic InfoNCE Loss}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Multi-Threshold Topology Surrogate}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Experimental Setup}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Dataset.}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Architecture Config.}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Baselines.}{5}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Quantitative Results}{5}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of segmentation performance on the Kaggle Leaf Lesion Test Set ($N=442$). $\Delta \beta $ represents the mean absolute error in topological feature counts (lower is better).}}{5}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:main_results}{{1}{5}{}{table.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Qualitative results comparison. (Left) Input Image. (Middle) Euclidean Baseline Prediction showing merged lesions. (Right) HyperTopo Prediction correctly separating distinct infection sites.}}{5}{}\protected@file@percent }
+\newlabel{fig:qualitative}{{1}{5}{}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Ablation Studies}{5}{}\protected@file@percent }
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{chen2017deeplabv3}{{1}{2017}{{Chen et~al.}}{{Chen, Papandreou, Schroff, and Adam}}}
+\bibcite{clough2020topological}{{2}{2020}{{Clough et~al.}}{{Clough, Byrne, Oksuz, Zimmer, Schnabel, and King}}}
+\bibcite{hu2022lora}{{3}{2022}{{Hu et~al.}}{{Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and Chen}}}
+\bibcite{hu2019topoloss}{{4}{2019}{{Hu et~al.}}{{Hu, Fuxin, Samaras, and Chen}}}
+\bibcite{nickel2017poincare}{{5}{2017}{{Nickel and Kiela}}{{}}}
+\bibcite{oquab2023dinov2}{{6}{2023}{{Oquab et~al.}}{{Oquab, Darcet, Moutakanni, Vo, Szafraniec, Khalidov, Fernandez, Haziza, Massa, El-Nouby, et~al.}}}
+\bibcite{ronneberger2015unet}{{7}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer, and Brox}}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Ablation study on Validation Set ($N=442$).}}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Detailed Mathematical Formulation}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}Riemannian Geometry Basics}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}The Poincaré Ball Model}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {A.2.1}Why Hyperbolic for Lesions?}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}Spherical Embeddings}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {B}Topology Surrogate Loss Implementation}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Persistent Homology Overview}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.2}Gradient Approximation}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {C}Dataset and Preprocessing Details}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.1}Kaggle Leaf Lesion Dataset}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.2}Class Imbalance}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {D}Training Dynamics and Hyperparameters}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.1}Warmup Strategy}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {D.2}Learning Rate Schedule}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Training Loss Curves. Note the slight spike at Epoch 10 when the Topology Loss is introduced, followed by rapid convergence to a lower validation error.}}{9}{}\protected@file@percent }
+\newlabel{fig:loss_curves}{{2}{9}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Additional Qualitative Results}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {E.1}Success Cases}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Touching Lesions.}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Necrotic Centers.}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {E.2}Failure Cases}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Vein occlusion.}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Shadows.}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {F}Broader Impact}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.1}Agricultural Automation}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.2}Scientific Phenotyping}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {F.3}Limitations}{10}{}\protected@file@percent }
+\gdef \@abspage@last{10}

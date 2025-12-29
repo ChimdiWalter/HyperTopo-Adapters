@@ -1,0 +1,107 @@
+\relax 
+\citation{ronneberger2015unet}
+\citation{chen2017deeplabv3}
+\citation{he2016resnet}
+\citation{oquab2023dinov2}
+\citation{simeoni2025dinov3}
+\citation{hu2022lora}
+\citation{clough2020topological,hu2019topoloss}
+\citation{nickel2017poincare}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\citation{ronneberger2015unet}
+\citation{chen2017deeplabv3}
+\citation{he2016resnet}
+\citation{oquab2023dinov2,simeoni2025dinov3}
+\citation{hu2022lora}
+\citation{nickel2017poincare}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Segmentation Architectures.}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Pretrained Encoders and Adapters.}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Hyperbolic and Non-Euclidean Representations.}{2}{}\protected@file@percent }
+\citation{clough2020topological}
+\citation{hu2019topoloss}
+\citation{edelsbrunner2008persistent}
+\citation{gudhi2015}
+\citation{oquab2023dinov2}
+\citation{oquab2023dinov2}
+\@writefile{toc}{\contentsline {paragraph}{Topology-Aware Segmentation.}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Method}{3}{}\protected@file@percent }
+\newlabel{sec:method}{{3}{3}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}H$\oplus $E$\oplus $S Manifold Adapter Head}{3}{}\protected@file@percent }
+\newlabel{sec:manifold_head}{{3.1}{3}{}{subsection.3.1}{}}
+\citation{chen2017deeplabv3}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {HyperTopo-Adapters Architecture.} A frozen encoder (e.g. DINOv2 ViT~(\cite  {oquab2023dinov2})) produces a feature map. Our manifold adapter head projects features into hyperbolic, Euclidean, and spherical subspaces and combines them (H$\oplus $E$\oplus $S). A decoder uses these enriched features to predict the segmentation. Training involves three losses: standard segmentation loss (e.g. cross-entropy), hyperbolic InfoNCE contrastive loss to align representations, and a topology surrogate loss that penalizes topological errors by comparing persistence diagrams of prediction vs ground truth.}}{4}{}\protected@file@percent }
+\newlabel{fig:architecture}{{1}{4}{}{figure.1}{}}
+\citation{oord2018infonce}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Segmentation Decoder}{5}{}\protected@file@percent }
+\newlabel{sec:decoder}{{3.2}{5}{}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Hyperbolic InfoNCE Contrastive Loss}{5}{}\protected@file@percent }
+\newlabel{sec:infonce}{{3.3}{5}{}{subsection.3.3}{}}
+\citation{edelsbrunner2008persistent}
+\citation{clough2020topological,hu2019topoloss}
+\citation{hu2019topoloss}
+\citation{gudhi2015}
+\citation{hu2019topoloss}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Topology Surrogate Loss}{6}{}\protected@file@percent }
+\newlabel{sec:topo_loss}{{3.4}{6}{}{subsection.3.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Topology Surrogate Illustration.} We visualize the persistent homology computation on a sample prediction vs ground truth. (a) Ground truth mask with one connected component and one hole (Betti $(\beta _0=1, \beta _1=1)$). (b) Prediction misses the hole (topologically incorrect $\beta _1=0$) despite similar Dice. (c) Persistence diagrams: ground truth has a prominent $H_1$ feature (red point) off the diagonal, whereas prediction’s $H_1$ feature is either absent or close to diagonal (tiny persistence). Our topology loss penalizes this discrepancy, pushing the model to carve out the missing hole in the prediction.}}{7}{}\protected@file@percent }
+\newlabel{fig:topo_surrogate}{{2}{7}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Overall Training Objective}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{7}{}\protected@file@percent }
+\citation{ronneberger2015unet}
+\citation{chen2017deeplabv3}
+\citation{he2016resnet}
+\citation{oquab2023dinov2}
+\citation{dice1945}
+\citation{jaccard1912}
+\citation{perazzi2016davis}
+\citation{oquab2023dinov2}
+\@writefile{toc}{\contentsline {paragraph}{Datasets.}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Baselines.}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Metrics.}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Implementation.}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Quantitative Performance.}{8}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Segmentation performance on Synthetic Shapes and Cardiac MRI. We report Dice (higher better), IoU, Boundary F1 (BF), and topology errors (Betti Err). Best results in \textbf  {bold}. HyperTopo-Adapters matches or exceeds full models in overlap scores while greatly reducing topological errors.}}{9}{}\protected@file@percent }
+\newlabel{tab:main_results}{{1}{9}{}{table.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{Qualitative Results.}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Topology vs Accuracy Trade-off.}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Segmentation Examples.} Top row: Synthetic shapes. (a) Input image. (b) U-Net result (red outline) vs ground truth (green); the U-Net incorrectly filled the donut hole (arrow). (c) Our result (blue outline) vs ground truth (green); the hole is correctly preserved. Bottom row: Cardiac MRI. (d) Input slice. (e) DeepLabv3 baseline output (red) vs GT (green); baseline segmentation has a discontinuity in the heart wall (arrow) and some jagged edges. (f) Our output (blue) vs GT; it yields a single connected ring for the myocardium and smooth boundaries, matching the expected anatomy.}}{10}{}\protected@file@percent }
+\newlabel{fig:segmentation_gallery}{{3}{10}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {paragraph}{Ablation Studies.}{10}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Dice vs Topology Trade-off.} Validation performance as we vary the weight of the topology surrogate loss. The x-axis is the average bottleneck distance between predicted and true persistence diagrams (lower means better topological alignment), and y-axis is the Dice score. Our full model (star) achieves a good compromise, markedly improving topology (leftward shift) with virtually no loss in Dice. In fact, moderate topology regularization can slightly boost Dice by eliminating anatomically implausible predictions.}}{11}{}\protected@file@percent }
+\newlabel{fig:dice_vs_pd}{{4}{11}{}{figure.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Ablation study on validation set (Cardiac MRI). We remove one component at a time to measure its effect.}}{11}{}\protected@file@percent }
+\newlabel{tab:ablations}{{2}{11}{}{table.2}{}}
+\citation{dice1945}
+\citation{jaccard1912}
+\citation{perazzi2016davis}
+\citation{perazzi2016davis}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Additional Metrics and Loss Details}{12}{}\protected@file@percent }
+\newlabel{app:metrics_loss}{{A}{12}{}{section.1}{}}
+\citation{hu2019topoloss}
+\citation{edelsbrunner2008persistent}
+\citation{gudhi2015}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Topology Surrogate and Persistent Homology Computation}{13}{}\protected@file@percent }
+\newlabel{app:topology}{{B}{13}{}{section.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}Configuration and Training Regime}{14}{}\protected@file@percent }
+\newlabel{app:config}{{C}{14}{}{section.3}{}}
+\bibstyle{plainnat}
+\bibdata{references}
+\bibcite{chen2017deeplabv3}{{1}{2017}{{Chen et~al.}}{{Chen, Papandreou, Schroff, and Adam}}}
+\bibcite{clough2020topological}{{2}{2020}{{Clough et~al.}}{{Clough, Byrne, Oksuz, Zimmer, Schnabel, and King}}}
+\bibcite{dice1945}{{3}{1945}{{Dice}}{{}}}
+\bibcite{edelsbrunner2008persistent}{{4}{2008}{{Edelsbrunner and Harer}}{{}}}
+\bibcite{he2016resnet}{{5}{2016}{{He et~al.}}{{He, Zhang, Ren, and Sun}}}
+\bibcite{hu2022lora}{{6}{2022}{{Hu et~al.}}{{Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and Chen}}}
+\bibcite{hu2019topoloss}{{7}{2019}{{Hu et~al.}}{{Hu, Fuxin, Samaras, and Chen}}}
+\bibcite{jaccard1912}{{8}{1912}{{Jaccard}}{{}}}
+\bibcite{nickel2017poincare}{{9}{2017}{{Nickel and Kiela}}{{}}}
+\bibcite{oord2018infonce}{{10}{2018}{{Oord et~al.}}{{Oord, Li, and Vinyals}}}
+\bibcite{oquab2023dinov2}{{11}{2023}{{Oquab et~al.}}{{Oquab, Darcet, Moutakanni, Vo, Szafraniec, Khalidov, Fernandez, Haziza, Massa, El-Nouby, et~al.}}}
+\bibcite{perazzi2016davis}{{12}{2016}{{Perazzi et~al.}}{{Perazzi, Pont-Tuset, McWilliams, Van~Gool, Gross, and Sorkine-Hornung}}}
+\bibcite{ronneberger2015unet}{{13}{2015}{{Ronneberger et~al.}}{{Ronneberger, Fischer, and Brox}}}
+\bibcite{simeoni2025dinov3}{{14}{2025}{{Sim'eoni et~al.}}{{Sim'eoni, Vo, Seitzer, Baldassarre, Oquab, Jose, Khalidov, Szafraniec, Yi, Ramamonjisoa, Massa, Haziza, Wehrstedt, Wang, Darcet, Moutakanni, Sentana, Roberts, Vedaldi, Tolan, Brandt, Couprie, Mairal, J'egou, Labatut, and Bojanowski}}}
+\bibcite{gudhi2015}{{15}{2015}{{The GUDHI Project}}{{}}}
+\gdef \@abspage@last{17}

@@ -1,0 +1,5 @@
+- [ ] Double-blind
+- [ ] ≤ 9 pages main
+- [ ] Reproducibility
+- [ ] Ethics/Broader Impact
+- [ ] Vector figures

@@ -36,12 +36,12 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Hyperparameters}{6}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}Results and Analysis}{6}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Phase 1: Baseline Evaluation}{6}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Qualitative results from the \textbf  {Euclidean Baseline}. Note the fragmentation (confetti-like predictions) in the red masks on the right, indicating high $\beta _0$ error.}}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Figure 2:} Qualitative results from the \textbf  {Euclidean Baseline}. Note the fragmentation (confetti-like predictions) in the red masks on the right, indicating high $\beta _0$ error.}}{6}{}\protected@file@percent }
 \newlabel{fig:euclid_qual}{{2}{6}{}{figure.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Phase 2: Naive vs. Tuned Manifold Learning}{6}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of Euclidean vs. \textbf  {Naive HES}. Note that while HES improves hole detection ($\Delta \beta _1$), it initially degrades Dice scores due to feature space fragmentation caused by the aggressive hyperbolic constraint ($\tau =0.1$).}}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Figure 3:} Comparison of Euclidean vs. \textbf  {Naive HES}. Note that while HES improves hole detection ($\Delta \beta _1$), it initially degrades Dice scores due to feature space fragmentation caused by the aggressive hyperbolic constraint ($\tau =0.1$).}}{7}{}\protected@file@percent }
 \newlabel{fig:bar_chart_1}{{3}{7}{}{figure.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Comparison of Euclidean vs. \textbf  {Tuned HyperTopo (HES High)}. With $\tau =0.2$ and optimized weights, the HyperTopo model (Green) recovers performance, beating the baseline in Dice and maintaining superior topological metrics.}}{7}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Figure 4:} Comparison of Euclidean vs. \textbf  {Tuned HyperTopo (HES High)}. With $\tau =0.2$ and optimized weights, the HyperTopo model (Green) recovers performance, beating the baseline in Dice and maintaining superior topological metrics.}}{7}{}\protected@file@percent }
 \newlabel{fig:bar_chart_2}{{4}{7}{}{figure.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Phase 3: Visual Validation}{7}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Topological Fidelity Analysis}{7}{}\protected@file@percent }
@@ -72,15 +72,11 @@
 \@writefile{toc}{\contentsline {section}{\numberline {B}Computational Complexity Analysis}{10}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {C}Hardware and Environment Specification}{10}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {D}Training Dynamics}{10}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Qualitative results for \textbf  {Naive H$\oplus $E$\oplus $S}. While it captures necrotic holes (improved $\beta _1$), the overall mask integrity is poor, leading to lower Dice scores.}}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Figure 5:} Qualitative results for \textbf  {Naive H$\oplus $E$\oplus $S}. While it captures necrotic holes (improved $\beta _1$), the overall mask integrity is poor, leading to lower Dice scores.}}{11}{}\protected@file@percent }
 \newlabel{fig:hes_naive_qual}{{5}{11}{}{figure.5}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Qualitative results for \textbf  {HyperTopo (Ours)}. The model produces coherent masks that correctly identify lesions while preserving the internal hole topology, achieving the best trade-off.}}{12}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Figure 6:} Qualitative results for \textbf  {HyperTopo (Ours)}. The model produces coherent masks that correctly identify lesions while preserving the internal hole topology, achieving the best trade-off.}}{12}{}\protected@file@percent }
 \newlabel{fig:hes_tuned_qual}{{6}{12}{}{figure.6}{}}
-\newlabel{fig:scatter_a}{{7a}{13}{}{subfigure.7.1}{}}
-\newlabel{sub@fig:scatter_a}{{a}{13}{}{subfigure.7.1}{}}
-\newlabel{fig:scatter_b}{{7b}{13}{}{subfigure.7.2}{}}
-\newlabel{sub@fig:scatter_b}{{b}{13}{}{subfigure.7.2}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Dice vs. Topological Distance (PD) analysis. \textbf  {(a)} The naive manifold approach (Red) improves topology but loses Dice compared to Euclidean (Blue). \textbf  {(b)} The tuned HyperTopo model (Green) achieves the best balance, pushing towards the bottom-right optimal corner.}}{13}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces \textbf  {Figure 7:} Dice vs. Topological Distance (PD) analysis. \textbf  {(a)} The naive manifold approach (Red) improves topology but loses Dice compared to Euclidean (Blue). \textbf  {(b)} The tuned HyperTopo model (Green) achieves the best balance, pushing towards the bottom-right optimal corner.}}{13}{}\protected@file@percent }
 \newlabel{fig:scatter}{{7}{13}{}{figure.7}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Schematic of Training Dynamics. I intentionally disabled the Topology Loss for the first 10 epochs (Warmup) to allow the segmentation mask to stabilize.}}{13}{}\protected@file@percent }
 \newlabel{fig:loss_curve}{{8}{13}{}{figure.8}{}}

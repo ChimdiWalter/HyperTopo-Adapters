@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.4.7)  28 DEC 2025 21:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.4.7)  28 DEC 2025 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1041,7 +1041,7 @@ Package pdftex.def Info: figures/qualitative_example_heshyp.png  used on input
 line 337.
 (pdftex.def)             Requested size: 397.48499pt x 755.22385pt.
 
-LaTeX Warning: Float too large for page by 133.69383pt on input line 340.
+LaTeX Warning: Float too large for page by 144.64383pt on input line 340.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1054,13 +1054,13 @@ Package pdftex.def Info: figures/pd_vs_dice.png  used on input line 349.
 <figures/pd_vs_dice_1.png, id=46, 375.804pt x 303.534pt>
 File: figures/pd_vs_dice_1.png Graphic file (type png)
 <use figures/pd_vs_dice_1.png>
-Package pdftex.def Info: figures/pd_vs_dice_1.png  used on input line 356.
+Package pdftex.def Info: figures/pd_vs_dice_1.png  used on input line 355.
 (pdftex.def)             Requested size: 190.79109pt x 154.10092pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (26.56238pt too wide) in paragraph at lines 371--380
+Overfull \hbox (26.56238pt too wide) in paragraph at lines 369--378
  [][] 
  []
 
@@ -1093,10 +1093,10 @@ L3 programming layer <2025-01-18>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 31009 strings out of 473201
- 768313 string characters out of 5716121
- 1257125 words of memory out of 5000000
- 53754 multiletter control sequences out of 15000+600000
+ 31005 strings out of 473201
+ 768245 string characters out of 5716121
+ 1257011 words of memory out of 5000000
+ 53750 multiletter control sequences out of 15000+600000
  573705 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,91p,1853b,901s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1114,7 +1114,7 @@ cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/tex
 live/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on update.pdf (13 pages, 11977678 bytes).
+Output written on update.pdf (13 pages, 11977755 bytes).
 PDF statistics:
  136 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
